@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        p,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+            font-size: 100%;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .clearfix:after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+
+body {
+ background-color: #EFE6E4;
+ box-sizing: border-box;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 18px;
+ margin: 0;
+ color: #533738;
+ position: relative;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ section, header {
+     width: 100%;
+ }
+
+ .container{
+     width: 1220px;
+     margin: 0 auto;
+ }
+
+ .logo {
+    position: relative;
+ }
+
+.logo::before {
+    content: "";
+    background-image: url('../image/logo.png');
+    position: absolute;
+    top: 0;
+    margin-left: -25px;
+    width: 25px;
+    height: 25px;
+}
+
+header {
+    background: url("../image/anastasiya-vysotskaya.png");
+    background-size: cover; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 16px;
+    align-items: baseline;
+    padding-top: 38px;
+}
+
+a {
+    text-decoration: none;
+    color: #533738;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0;
+    margin-right: 26px;
+}
+
+.main{
+    margin: 95px 0 0 50px;
+}
+
+.main p:nth-child(2) {
+    padding: 24px 0;
+}
+
+
+h1 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+}
+
+p {
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.botton {
+    padding: 45px 0 170px 0;
+    
+}
+
+.botton a {
+    background-color: #CC8B86;
+    padding: 25px 65px;
+    font-weight: 500;
+    margin-top: 60px;
+}
+
+.company {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.company img {
+    margin-right: 62px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    padding: 65px 0 40px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.company p{
+    padding-bottom: 30px;
+    max-width: 520px;
+}
+
+.end, .feedback {
+    background-color: #8D7370;
+}
+
+.end> .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 85px 0;
+}
+
+.end p{
+    font-size: 50px;
+    line-height: 62px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.end span {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.work h2 {
+    text-align: left;
+}
+
+.studio {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.work p {
+    padding: 10px 0 65px;
+    text-align: center;
+}
+
+.work p a{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 40px 0 65px 0;
+    text-align: center;
+    position: relative;
+}
+
+.arrow {
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    background-color: #533738;
+    position: absolute;
+    top: 50%;
+    margin-left: 10px;
+}
+
+.work .arrow::after{
+    width: 8px;
+    height: 8px;
+    content: "";
+    position: absolute;
+    border-top: 2px solid transparent;
+    border-right: 2px solid #533738;
+    border-bottom: 2px solid #533738;
+    border-left: 2px solid transparent;
+    top: -5px;
+    transform: rotate(-45deg);
+    right: 0px;
+}
+
+.discription {
+    display: none;
+    width: calc(100% - 35px);
+    height: calc(100% - 65px);
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(100, 72, 69, 0.8);
+    color: white;
+    padding: 65px 0 0 35px;
+}
+
+.discription p:first-child {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.hover {
+    position: relative;
+}
+
+.hover:hover .discription{
+    display: block;
+}
+
+.team {
+    background-color: #E2C4BA;
+}
+
+.workers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.workers p {
+    max-width: 320px;
+    padding-top: 10px;
+}
+
+.working {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.working p:last-child {
+    max-width: 285px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.circle {
+    position: relative;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    width: 70px;
+    height: 70px;
+    background: #8D7370;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    margin: 0 auto 40px;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.slider img {
+    margin: 0 0 20px 20px;
+    display: block;
+    max-width: 407px;
+}
+.slider img:last-child{
+    margin-bottom: 65px;
+}
+
+.review-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+}
+
+.review-text p:nth-child(2n+1){
+    padding: 30px 0;
+}
+
+.slider .circle{
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    background: #CC8B86;
+    border-radius: 50%;
+}
+
+.slider .left {
+    top: calc(50% - 36px);
+    left: calc(10% - 29px);
+}
+
+.slider .right {
+    top: calc(50% - 36px);
+    right: calc(10% - 29px);
+}
+
+.circle .arrow {
+    width: 32px;
+    top:50%;
+    right: calc(50% - 16px);
+    background-color: white;
+}
+
+.right .arrow::after{
+    width: 8px;
+    height: 8px;
+    content: "";
+    position: absolute;
+    border-top: 2px solid transparent;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 2px solid transparent;
+    top: -5px;
+    transform: rotate(-45deg);
+    right: 0px;
+}
+
+.left .arrow::before{
+    width: 8px;
+    height: 8px;
+    content: "";
+    position: absolute;
+    border-top: 2px solid white;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid white;
+    top: -5px;
+    transform: rotate(-45deg);
+    left: 0px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    padding: 37px 0;
+}
+
+.contacts span:first-child {
+    margin-right: 40px;
+}
+
+.contacts span:last-child{
+    margin-left: auto;
+    }
+
+.form {
+    color: white;
+    margin-right: 20px;
+}
+
+.form p:first-child {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    padding: 50px 0 24px;
+    text-transform: uppercase;
+   }
+
+   .form p:nth-child(2) {
+    padding-bottom: 40px;
+    opacity: 0.6;
+    max-width: 500px;
+   }
+
+.feedback input {
+    display: block;
+    background: #8D7370;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    border: none
+}
+
+.feedback input::placeholder {
+    color: #F6EDE9;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feedback input[type=text] {
+    border-bottom: 1px solid white;
+    width: 508px;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+}
+
+.feedback input[type=submit] {
+    background-color: #CC8B86;
+    padding: 25px 65px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.forms{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
